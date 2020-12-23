@@ -378,6 +378,7 @@ def generate_plic(plic):
 plic: IRQControllers.PlatformLevelInterruptController @ {}
     [0-3] -> cpu@[8-11]
     numberOfSources: 31
+    numberOfTargets: 2
     prioritiesEnabled: false
 """.format(generate_sysbus_registration(plic,
                                         skip_braces=True,
